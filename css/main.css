@@ -212,3 +212,97 @@ body {
 .about-me__action {
     margin-top: 40px;
 }
+
+/* Services section styles */
+.services {
+    padding-top: 100px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    padding: 60px 30px;
+    background-color: #F8FAFF;
+    margin-right: 3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.service-card__title {
+     color: #05364d;
+     font-size: 14px;
+     font-weight: 500;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+}
+
+.service-card__description {
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #797979;
+}
+
+.service-card__link {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364d;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    background-color: #5f30ff;
+}
+
+.service-card:hover .service-card__title,
+.service-card:hover .service-card__description,
+.service-card:hover .service-card__link {
+    color: #FFFFFF;
+}
+
+/* Clients section styles */
+.clients {
+    padding-top: 100px;
+}
+
+.client-item > div {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.client-item__image img {
+     width: 100%;
+}
+
+.client-item__info {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.client-item__name {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.client-item__position {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5b6d75;
+}
+
+.client-item__review {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #5b6d75;
+}
+
+.client-item__rate {
+    color: #FFD805;
+}
+
+.disabled {
+    color: #aeb9be;
+}
