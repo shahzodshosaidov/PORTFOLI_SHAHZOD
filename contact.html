@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio - Bog'lanish</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <!--Header section-->
+
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__brand">
+          <a href="index.html">
+            <img src="images/mind academy logo.jpg" alt="Logo" />
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="main-navigation__items">
+            <li class="main-navigation__items active">
+              <a href="index.html">Asosiy</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="#">Men haqimda</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="#">Xizmatlarim</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="#">Mijozlar</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="#">Portfolio</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="#">Blog</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="#">Sheriklar</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="contact.html">Bog'lanish</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header section -->
+
+    <div class="container">
+      <section class="contact">
+        <div class="section-title">Men bilan bog'laning</div>
+        <form action="/server.php" method="GET">
+          <textarea
+            name="message"
+            id="message"
+            rows="10"
+            placeholder="Xabaringizni kiriting"
+          ></textarea>
+          <div class="half-row contact__firstname">
+            <input type="text" placeholder="Ismingizni kiriting" name="fname" />
+          </div>
+          <div class="half-row contact__email">
+            <input
+              type="email"
+              placeholder="Emailingizni kiriting"
+              name="email"
+            />
+          </div>
+          <input type="text" placeholder="Xat mazmuni" name="subject" />
+          <button class="button contact__button" type="submit">
+            Xabar jo'natish
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Asosiy</a>
+          </li>
+          <li>
+            <a href="">Men haqimda</a>
+          </li>
+          <li>
+            <a href="">Xizmatlarim</a>
+          </li>
+          <li>
+            <a href="">Mijozlar</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">Sheriklar</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

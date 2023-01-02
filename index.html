@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -10,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/shared.css">
   </head>
   <body>
     <!--Header section-->
@@ -18,13 +20,13 @@
       <div class="container">
         <div class="main-header__brand">
           <a href="index.html">
-            <img src="images/mind academy logo.jpg" alt="Logo" />
+            <img src="images/mind academy 1 logo.jpg" alt="Logo" />
           </a>
         </div>
         <nav class="main-navigation">
           <ul class="main-navigation__items">
             <li class="main-navigation__items active">
-              <a href="#">Asosiy</a>
+              <a href="index.html">Asosiy</a>
             </li>
             <li class="main-navigation__items">
               <a href="#">Men haqimda</a>
@@ -43,6 +45,9 @@
             </li>
             <li class="main-navigation__items">
               <a href="#">Sheriklar</a>
+            </li>
+            <li class="main-navigation__items">
+              <a href="contact.html">Bog'lanish</a>
             </li>
           </ul>
         </nav>
@@ -381,41 +386,79 @@
 
     <!-- Partners -->
     <div class="container">
-      <section id="partners" class="parners">
-        <h1>Sheriklarim</h1>
+      <section id="partners" class="partners">
+        <div class="partner">
+          <img src="images/logo1.png.webp" alt="" />
+        </div>
+        <div class="partner">
+          <img src="images/logo2.png.webp" alt="" />
+        </div>
+        <div class="partner">
+          <img src="images/logo3.png.webp" alt="" />
+        </div>
+        <div class="partner">
+          <img src="images/logo4.png.webp" alt="" />
+        </div>
+        <div class="partner">
+          <img src="images/logo5.png.webp" alt="" />
+        </div>
       </section>
     </div>
 
     <!-- Partners -->
 
-    <!-- Footer -->
-    <footer>
-      <nav>
-        <ul>
-          <li>
+    <!-- Footer -->  
+    <footer class="footer">
+    <div class="container">
+      <div class="footer__brand">
+        <img src="images/mind academy logo.jpg" alt="WQDQW">
+      </div>
+     
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-items">
+          <li class="footer__navigation-item">
             <a href="#">Asosiy</a>
           </li>
-          <li>
+          <li class="footer__navigation-item">
             <a href="">Men haqimda</a>
           </li>
-          <li>
+          <li class="footer__navigation-item">
             <a href="">Xizmatlarim</a>
           </li>
-          <li>
+          <li class="footer__navigation-item">
             <a href="">Mijozlar</a>
           </li>
-          <li>
+          <li class="footer__navigation-item">
             <a href="">Portfolio</a>
           </li>
-          <li>
+          <li class="footer__navigation-item">
             <a href="">Blog</a>
           </li>
-          <li>
+          <li class="footer__navigation-item">
             <a href="">Sheriklar</a>
           </li>
         </ul>
       </nav>
-    </footer>
+      <ul class="footer__socials">
+         <li class="footer__social">
+          <a href="#">
+            <i class="fab fa-telegram"></i>
+          </a>
+         </li>
+         <li class="footer__social">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+         </li>
+         <li class="footer__social">
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+         </li>
+      </ul>
+      <p class="footer__paragraph">Copyright ©2023 All rights reserved | This template is made with  by Colorlib</p>
+    </div>
+      </footer>
     <!-- Footer -->
   </body>
 </html>
