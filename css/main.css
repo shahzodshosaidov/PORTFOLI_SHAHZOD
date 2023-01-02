@@ -528,4 +528,80 @@ body {
     .main-section > div {
         width: 100%;
     }
+
+    .main-section__introduction {
+        font-size: 3rem;
+    }
+
+    /* Statistics section */
+    .statistics__item {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    /* About me section */
+    .about-me {
+        padding: 1.5rem 0;
+    }
+    .about-me > div {
+        width: 100%;
+    }
+    .about-me__image img {
+        display: none;
+    }
+
+    /* Services section */
+    .services {
+        padding: 1.5rem 0;
+    }
+    .service-card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Clients */
+    .clients {
+        padding: 1.5rem 0;
+    }
+    .client-item > div {
+        width: 100%;
+        float: none;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 1.5rem 0;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+    .portfolio-item-2,
+    .portfolio-item-3 {
+        position: static;
+    }
+    /* Blog section */
+    .blog {
+       padding: 1.5rem 0; 
+    }
+
+    .blog-item {
+       width: 100%;
+       margin-right: 0;
+       margin-bottom: 20px; 
+    }
+    
+    /* Partners */
+    .partners {
+        padding: 1.5rem 0;
+    }
+
+    .partner {
+        display: block;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
