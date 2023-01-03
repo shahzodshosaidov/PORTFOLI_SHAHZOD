@@ -38,3 +38,14 @@ input:focus {
 .contact__button {
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 991px) {
+    .half-row {
+        width: 100%;
+    }
+
+    .contact__firstname,
+    .contact__email {
+        padding: 0;
+    }
+}
