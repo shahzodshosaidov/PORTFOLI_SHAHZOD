@@ -179,6 +179,7 @@ body {
 
 .main-section__social-networks a:hover i {
     color: #1C44E4;
+    transition: all 0.4s ease 0s;
 }
 
 .main-section__action {
@@ -252,6 +253,7 @@ body {
     margin-right: 3%;
     text-align: center;
     box-sizing: border-box;
+    transition: all 0.4s ease 0s;
 }
 
 .service-card__title {
@@ -403,9 +405,8 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(19,69,230,0.9);
-    visibility: hidden;
     z-index: 1;
+    transition: all 0.4s ease 0s;
 }
 
 .portfolio-item__info {
@@ -414,7 +415,9 @@ body {
     left: 80px;
     color: white;
     visibility: hidden;
+    opacity: 0;
     z-index: 1;
+    transition: all 0.4s ease 0s;
 }
 
 .portfolio-item__info a {
@@ -423,6 +426,7 @@ body {
 }
 
 .portfolio-item:hover .portfolio-item__overplay {
+    background: rgba(19,69,230,0.9);
     visibility: visible;
     top: 20px;
     left: 20px;
@@ -432,6 +436,7 @@ body {
     visibility: visible;
     bottom: 24px;
     left: 60px;
+    opacity: 1;
 }
 
 /* Blog section styles*/
@@ -445,6 +450,7 @@ body {
 
 .blog-item {
     display: inline-block;
+    overflow: hidden;
     width: 30%;
     margin-right: 3%;
     box-sizing: border-box;
@@ -458,8 +464,18 @@ body {
     background-color: white;
 }
 
+.blog-item__image {
+    overflow: hidden;
+}
+
 .blog-item__image img {
     width: 100%;
+    vertical-align: middle;
+    transition: all 0.4s ease 0s;
+}
+
+.blog-item:hover .blog-item__image img {
+    transform: scale(1.1);
 }
 
 .blog-item__info {

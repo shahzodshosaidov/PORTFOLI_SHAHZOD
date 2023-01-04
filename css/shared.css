@@ -149,6 +149,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+.button {
+    font-family: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
