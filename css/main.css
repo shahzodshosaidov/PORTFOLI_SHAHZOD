@@ -136,12 +136,10 @@ body {
 
 .main-section {
     padding: 100px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.main-section > div {
-    width: 50%;
-    float: left;
-}
 .main-section__image {
     text-align: right;
 }
@@ -189,11 +187,11 @@ body {
 /* Statistics section*/
 .statistics {
     padding-top: 100px;
+    display: flex;
 }
 
 .statistics__item {
     width: 150px;
-    display: inline-block;
     background-color: #F8FAFF;
     text-align: center;
     padding: 5px 10px;
@@ -218,10 +216,11 @@ body {
 /* About me section */
 .about-me {
     padding: 100px 0;
+    display: flex;
+    align-items: center;
 }
 .about-me > div {
-    width: 50%;
-    float: left;
+    flex: 1;
 }
 
 .about-me__image img {
@@ -246,14 +245,17 @@ body {
 }
 
 .service-card {
-    display: inline-block;
-    width: 30%;
     padding: 60px 30px;
     background-color: #F8FAFF;
     margin-right: 3%;
     text-align: center;
     box-sizing: border-box;
     transition: all 0.4s ease 0s;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
 }
 
 .service-card__title {
@@ -294,10 +296,13 @@ body {
     padding-top: 100px;
 }
 
+.client-item {
+    display: flex;
+    align-items: center;
+}
+
 .client-item > div {
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
+   flex: 1;
 }
 
 .client-item__image img {
@@ -305,7 +310,6 @@ body {
 }
 
 .client-item__info {
-    padding-top: 50px;
     padding-left: 50px;
 }
 
@@ -446,12 +450,12 @@ body {
 
 .blog-items {
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .blog-item {
-    display: inline-block;
     overflow: hidden;
-    width: 30%;
     margin-right: 3%;
     box-sizing: border-box;
 }
@@ -523,10 +527,11 @@ body {
 /* Partners section styles */
 .partners {
    padding-top: 100px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .partner {
-    display: inline-block;
     padding: 0 30px;
 }
 
@@ -543,6 +548,7 @@ body {
     .statistics {
         padding-top: 1rem;
         text-align: center;
+        justify-content: center;
     }
     /* About me section */
     .about-me {
@@ -551,7 +557,7 @@ body {
     .about-me > div {
         width: 100%;
     }
-    .about-me__image img {
+    .about-me__image {
         display: none;
     }
 
@@ -560,14 +566,23 @@ body {
         padding: 1.5rem 0;
     }
 
+    .service-cards {
+        flex-wrap: wrap;
+    }
+
     .service-card {
-        width: 45%;
+        flex-basis: 45%;
         margin-bottom: 20px;
     }
      /* Clients */
     .clients {
         padding: 1.5rem 0;
     }
+
+    .client-item {
+        flex-direction: column;
+    }
+
     .client-item > div {
         width: 100%;
         float: none;
@@ -575,18 +590,22 @@ body {
     .blog {
         padding: 1.5rem 0; 
      }
+
+     .blog-items {
+        flex-wrap: wrap;
+     }
  
      .blog-item {
-        width: 45%;
+        flex-basis: 45%;
         margin-bottom: 20px; 
      }
     /* Partners */
     .partners {
         padding: 1.5rem 0;
+        flex-direction: column;
     }
 
     .partner {
-        display: block;
         padding: 0;
         text-align: center;
         margin-bottom: 10px;
@@ -600,6 +619,11 @@ body {
         background: none;
         min-height: auto;
     }
+
+    .main-section__image {
+        display: none;
+    }
+
     .main-section__action {
         display: none;
     }
@@ -609,6 +633,9 @@ body {
     }
 
     /* Statistics section */
+    .statistics {
+        flex-direction: column;
+    }
     .statistics__item {
         width: 100%;
         margin-bottom: 20px;
@@ -616,12 +643,10 @@ body {
         box-sizing: border-box;
     }
 
-    
-
     /* Services section */
     
     .service-card {
-        width: 100%;
+        flex-basis: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -639,8 +664,10 @@ body {
         position: static;
     }
     /* Blog section */
+    .blog-items {
+       flex-direction: column;
+    }
     .blog-item {
-       width: 100%;
        margin-right: 0;
        margin-bottom: 20px; 
     }
